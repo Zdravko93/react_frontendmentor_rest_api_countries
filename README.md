@@ -31,37 +31,32 @@ Users should be able to:
 
 ### Screenshot
 
-![](./countries-app-screenshot.png)
+![Project Screenshot](./screenshot-rest-api-countries-project.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/Zdravko93/react_frontendmentor_rest_api_countries/tree/main)
+- Live Site URL: (https://your-live-site-url.com)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS variables, SCSS - CSS extension, custom, data attributes
+- CSS module files (module.css)
 - Flexbox
 - CSS Grid
-- Desktop-first workflow
-- Vanilla JavaScript
+- Mobile-first workflow
+- React framework (including useState, useContext, useEffect) with clean structure
+- Custom hooks
+- Utility functions
 
 ### What I learned
 
-- Handling errors appropriately
 - Refined, different syntactical aproaches to solving problems
-- Accessibility aspect deep-dive
 - New CSS approaches to gaining better control over certain HTML elements and their positioning concerning responsive design
-- Deeper understanding and reasoning behind adopting more flexible ways to build certain parts of the application
+- Deeper reasoning behind adopting more flexible ways to build certain parts of the application
 - Clean, efficient way to define theme patterns and using them over the app in a simplest way having best practices in mind
 - Refined aproach to refactoring the code using best practices
-
-### Continued development
-
-- Will focus mostly on refining React skills, alongside Next technologies, sometimes building same apps I built using Vanilla JS to gain better perspective of their advantages and different aproaches and staying up to date with cutting-edge technologies
 
 ## Author
 
