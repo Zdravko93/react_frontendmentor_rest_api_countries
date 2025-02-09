@@ -1,0 +1,78 @@
+:root {
+  /* light theme(default) */
+  --clr-light-mode-bg: hsl(0, 0%, 98%);
+  --clr-light-mode-input: hsl(0, 0%, 52%);
+  --clr-light-mode-text: hsl(200, 15%, 8%);
+  --clr-light-mode-elements: hsl(0, 0%, 100%);
+
+  --font-family: "Nunito Sans", serif;
+}
+
+/* dark theme  */
+[data-theme="dark"] {
+  --clr-dark-mode-bg: hsl(207, 26%, 17%);
+  --clr-dark-mode-elements: hsl(209, 23%, 22%);
+  --clr-dark-mode-text: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 6.5em auto auto auto;
+  font-family: var(--font-family);
+  background: var(--clr-light-mode-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--clr-light-mode-bg);
+}
+
+/* body dark theme  */
+body[data-theme="dark"] {
+  background: var(--clr-dark-mode-bg);
+}
+
+button {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: var(--font-family);
+  cursor: pointer;
+}
+
+input {
+  font-family: var(--font-family);
+}
+
+@media (min-width: 768px) {
+  body {
+    margin-top: 7.5em;
+  }
+}

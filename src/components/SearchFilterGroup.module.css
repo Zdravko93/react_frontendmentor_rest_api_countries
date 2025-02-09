@@ -1,0 +1,21 @@
+.search-filter-group {
+  margin-inline: 2em;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+}
+
+@media (min-width: 1500px) {
+  .search-filter-group {
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .search-filter-group {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

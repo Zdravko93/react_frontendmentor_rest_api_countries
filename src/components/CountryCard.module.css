@@ -1,0 +1,85 @@
+.country {
+  text-decoration: none;
+  margin: auto;
+  height: 400px;
+  width: 350px;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+
+  opacity: 0;
+  transform: translateY(20px);
+  transition: transform 300ms ease, opacity 300ms ease, box-shadow 300ms ease;
+}
+
+[data-theme="dark"] .country {
+  background: var(--clr-dark-mode-elements);
+}
+
+.country:hover,
+.country:focus {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+[data-theme="dark"] .country:hover,
+[data-theme="dark"] .country:focus {
+  box-shadow: 0 5px 10px var(--clr-dark-mode-text);
+}
+
+.country img {
+  width: 100%;
+  height: 50%;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
+}
+
+.text {
+  color: var(--clr-light-mode-text);
+  padding-left: 1.5em;
+  padding-bottom: 3em;
+
+  flex-grow: 1;
+}
+
+[data-theme="dark"] .text {
+  color: var(--clr-dark-mode-text);
+}
+
+.country-title {
+  margin-block: 1em;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+
+.text h3 {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.text h3:not(:last-child) {
+  margin-bottom: 0.4em;
+}
+
+.text span {
+  font-weight: 300;
+}
+
+/* On Page Load card styles */
+.fade-in {
+  animation: fadeInAnimation 300ms ease-out forwards; /* 'forwards' is to keep the final state(animation final result) */
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

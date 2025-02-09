@@ -1,0 +1,72 @@
+.filter {
+  position: relative;
+  width: 53%;
+}
+
+select {
+  padding: 1em;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: var(--clr-light-mode-elements);
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-family: var(--font-family);
+  background: var(--clr-light-mode-elements);
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.85rem;
+
+  /*  remove default browser styles */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select:active,
+select:focus {
+  outline: 1px solid limegreen;
+}
+
+[data-theme="dark"] select {
+  background: var(--clr-dark-mode-elements);
+  color: var(--clr-dark-mode-text);
+}
+
+option {
+  background: transparent;
+  color: var(--clr-light-mode-text);
+  font-weight: 300;
+}
+
+option:hover {
+  background: transparent;
+}
+
+[data-theme="dark"] option {
+  color: var(--clr-dark-mode-text);
+}
+
+.select-arrow {
+  position: absolute;
+  top: 50%;
+  right: 1.35em;
+  transform: translate(50%, -50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid var(--clr-light-mode-text);
+
+  pointer-events: none;
+}
+
+[data-theme="dark"] .select-arrow {
+  border-top: 5px solid var(--clr-dark-mode-text);
+}
+
+@media (min-width: 768px) {
+  .filter {
+    width: 250px;
+  }
+}
