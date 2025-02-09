@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Zdravko93/react_frontendmentor_rest_api_countries.git/static/css/main.c2156353.css",
-    "main.js": "/Zdravko93/react_frontendmentor_rest_api_countries.git/static/js/main.eaa4ade9.js",
-    "index.html": "/Zdravko93/react_frontendmentor_rest_api_countries.git/index.html",
-    "main.c2156353.css.map": "/Zdravko93/react_frontendmentor_rest_api_countries.git/static/css/main.c2156353.css.map",
-    "main.eaa4ade9.js.map": "/Zdravko93/react_frontendmentor_rest_api_countries.git/static/js/main.eaa4ade9.js.map"
+    "main.css": "/react_frontendmentor_rest_api_countries.git/static/css/main.c2156353.css",
+    "main.js": "/react_frontendmentor_rest_api_countries.git/static/js/main.0ede7038.js",
+    "index.html": "/react_frontendmentor_rest_api_countries.git/index.html",
+    "main.c2156353.css.map": "/react_frontendmentor_rest_api_countries.git/static/css/main.c2156353.css.map",
+    "main.0ede7038.js.map": "/react_frontendmentor_rest_api_countries.git/static/js/main.0ede7038.js.map"
   },
   "entrypoints": [
     "static/css/main.c2156353.css",
-    "static/js/main.eaa4ade9.js"
+    "static/js/main.0ede7038.js"
   ]
 }
