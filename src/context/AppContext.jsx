@@ -50,6 +50,8 @@ export const AppContextProvider = ({ children }) => {
     const fetchData = async () => {
       try {
         const response = await fetch("https://restcountries.com/v3.1/all");
+        console.log(response.status, response.statusText);
+
         if (!response.ok) {
           throw new Error("Could not fetch countries data");
         }
