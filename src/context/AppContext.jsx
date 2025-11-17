@@ -49,18 +49,24 @@ export const AppContextProvider = ({ children }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://restcountries.com/v3.1/all");
-        console.log(response.status, response.statusText);
-
+        const url =
+          "https://restcountries.com/v3.1/all?fields=name,capital,region,flags,population,borders,cca3,subregion,currencies,languages";
+        const response = await fetch(url, {
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+        });
         if (!response.ok) {
-          throw new Error("Could not fetch countries data");
+          throw new Error(
+            `Could not fetch countries. Status: ${response.status}`
+          );
         }
         const data = await response.json();
-        // shuffle countries
-        const shuffledData = shuffleCountries(data);
-        setCountries(shuffledData);
+        setCountries(shuffleCountries(data));
       } catch (error) {
         console.error("Error fetching countries data", error);
+        setCountries([]); // reset countries array
       }
     };
 
