@@ -1,7 +1,5 @@
 # Frontend Mentor - Countries Search App with Color Theme Switcher solution
 
-This is a solution to the [Countries search app with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca).
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -29,40 +27,50 @@ Users should be able to:
 - Navigate to border countries from the detail page
 - Toggle the color scheme between light and dark mode _(optional)_
 
+### Key Features
+
+- Browse all countries with live data from the REST Countries API
+- Search for any country by name
+- Filter countries by region
+- View detailed country information on a dedicated page
+- Navigate easily between border countries
+- Switch between light and dark color themes
+
 ### Screenshot
 
 ![Project Screenshot](./screenshot-rest-api-countries-project.png)
 
 ### Links
 
-- Solution URL: (https://github.com/Zdravko93/react_frontendmentor_rest_api_countries/tree/main)
-- Live Site URL: (https://zdravko93.github.io/react_frontendmentor_rest_api_countries/)
+- Solution URL: [GitHub Repository](https://github.com/Zdravko93/react_frontendmentor_rest_api_countries/tree/main)
+- Live Site URL: [Live Demo](https://zdravko93.github.io/react_frontendmentor_rest_api_countries/)
 
 ## My process
 
 ### Built with
 
 - React (including useState, useContext, useEffect) – JavaScript library for building user interfaces
-- CSS Modules – For scoped, maintainable styling
-- Flexbox & CSS Grid – For layout and responsive design
+- CSS Modules – Scoped, maintainable styling
+- Flexbox & CSS Grid – Layout and responsive design
 - Custom Hooks – For better code organization
 - Mobile-First Workflow – Ensures a smooth experience across all devices
 
 ### What I learned
 
-- CSS Best Practices: Gained deeper understanding of Flexbox and CSS Grid for responsive design
-- React State Management: Learned how to use useContext for global state, improving app structure and scalability
-- API Integration: API Integration: Enhanced skills in fetching and managing data from external APIs
-- Dark/Light Mode: Implemented an efficient color theme switcher for seamless toggling between light and dark modes
-- Code Refactoring: Improved modularity and maintainability of the code
+- CSS Best Practices: Deepened understanding of Flexbox and CSS Grid
+- React State Management: Learned useContext for global state management
+- API Integration: Enhanced skills fetching and managing data from external APIs
+- Dark/Light Mode: Implemented a color theme switcher with seamless toggling
+- Code Refactoring: Improved modularity, maintainability, and readability
 
 ### Continued Development
 
-Planned improvements for the project include:
-- Adding search suggestions for faster results
-- Implementing pagination or infinite scrolling for better performance
+Planned improvements include:
+
+- Implementing pagination or infinite scrolling for performance
 - Further refactoring for scalability and maintainability
 - Writing unit and integration tests using Jest or React Testing Library
+- Continuously revisiting and refining this project as I learn new techniques and best practices
 
 ### Useful Resources
 
