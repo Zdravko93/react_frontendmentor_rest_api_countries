@@ -14,11 +14,13 @@ export default function Countries() {
     <>
       <SearchFilterGroup />
       <section className={classes.countries}>
-        {filteredCountries.map((country, index) => (
-          <React.Fragment key={country.name.common}>
-            <CountryCard countryData={country} index={index} />
-          </React.Fragment>
-        ))}
+        <ul className={classes["country-list"]}>
+          {filteredCountries.map((country, index) => (
+            <li key={country.name.common}>
+              <CountryCard countryData={country} index={index} />
+            </li>
+          ))}
+        </ul>
       </section>
     </>
   );
