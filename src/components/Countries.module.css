@@ -1,9 +1,15 @@
 .countries {
   margin: 3em auto 0 auto;
   padding-bottom: 5em;
+}
+
+.country-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-  grid-gap: 3em;
+  gap: 3em;
 }
 
 @media (min-width: 900px) {
