@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { ClipLoader } from "react-spinners";
+import { Helmet } from "react-helmet-async";
 
 import { IoIosArrowRoundBack } from "react-icons/io";
 import {
@@ -78,6 +79,48 @@ export default function CountryDetails() {
 
   return (
     <>
+      <Helmet>
+        <title>{`${country.name.common}  | React App`}</title>
+        <link
+          rel="canonical"
+          href={`https://zdravko93.github.io/react_frontendmentor_rest_api_countries/country-details/${encodeURIComponent(
+            countryName
+          )}`}
+        />
+        <meta
+          name="description"
+          content={`Details about ${country.name.common}, including population, region, capital, currencies, languages, and border countries.`}
+        />
+        {/* Open Graph tags for social media */}
+        <meta
+          property="og:title"
+          content={`${country.name.common} | React App`}
+        />
+        <meta
+          property="og:description"
+          content={`Details about ${country.name.common}, including population, region, capital, currencies, languages, and border countries.`}
+        />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:image"
+          content={country.flags.svg || country.flags.png}
+        />
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content={`${country.name.common} | React App`}
+        />
+        <meta
+          name="twitter:description"
+          content={`Details about ${country.name.common}, including population, region, capital, currencies, languages, and border countries.`}
+        />
+        <meta
+          name="twitter:image"
+          content={country.flags.svg || country.flags.png}
+        />
+      </Helmet>
+
       <main className={classes["country-details"]}>
         <Button
           onClick={handleBackButtonClick}
