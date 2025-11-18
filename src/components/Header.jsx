@@ -1,5 +1,3 @@
-import React from "react";
-
 import { IoMoonOutline } from "react-icons/io5";
 import { IoMoon } from "react-icons/io5";
 import { useAppContext } from "../context/AppContext";

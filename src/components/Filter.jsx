@@ -1,5 +1,3 @@
-import React from "react";
-
 import { useFilter } from "../customHooks/useFilter";
 import Card from "./Card";
 

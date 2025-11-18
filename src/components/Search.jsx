@@ -1,5 +1,3 @@
-import React from "react";
-
 import { FaSearch } from "react-icons/fa";
 import { useSearch } from "../customHooks/useSearch";
 import Card from "./Card";
