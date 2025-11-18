@@ -9,7 +9,11 @@ export default function Search() {
 
   return (
     <Card className={classes.search}>
+      <label htmlFor="search-country" className="sr-only">
+        Search for a country
+      </label>
       <input
+        id="search-country"
         type="text"
         placeholder="Search for a country..."
         value={countryInput}

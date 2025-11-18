@@ -39,6 +39,7 @@ export default function DetailItem({
               <li key={border}>
                 <Link
                   to={`/country-details/${border}`}
+                  aria-label={`View details for ${border}`}
                   className={props.linkClassName}
                 >
                   {border}
@@ -46,9 +47,9 @@ export default function DetailItem({
               </li>
             ))
           ) : (
-            <p className={props.noBorderTextClassName}>
+            <li className={props.noBorderTextClassName}>
               No border countries available
-            </p>
+            </li>
           )}
         </ul>
       </>

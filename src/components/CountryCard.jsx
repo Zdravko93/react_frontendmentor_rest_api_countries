@@ -19,7 +19,7 @@ export default function CountryCard({ countryData, index }) {
     >
       <Image
         source={countryData.flags.svg || countryData.flag.png}
-        altText={countryData.name}
+        altText={`Flag of ${countryData.name.common}`}
       />
       <Card className={classes.text}>
         <DetailItem

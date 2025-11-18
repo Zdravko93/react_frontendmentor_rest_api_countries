@@ -8,7 +8,14 @@ export default function Filter() {
 
   return (
     <Card className={classes.filter}>
-      <select value={selectedRegion} onChange={handleSelectChange}>
+      <label htmlFor="region-filter" className="sr-only">
+        Filter by region
+      </label>
+      <select
+        id="region-filter"
+        value={selectedRegion}
+        onChange={handleSelectChange}
+      >
         <option value="Filter by region">Filter by region</option>
         <option value="Africa">Africa</option>
         <option value="Americas">America</option>

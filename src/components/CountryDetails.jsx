@@ -50,7 +50,11 @@ export default function CountryDetails() {
 
   if (!isDataLoaded) {
     return (
-      <div className={classes["loading-spinner"]}>
+      <div
+        className={classes["loading-spinner"]}
+        role="status"
+        aria-live="polite"
+      >
         {/* {display spinner} */}
         <ClipLoader color="#4A90E2" loading={true} size={50} />
         <p>Fetching country data...</p>
@@ -85,7 +89,10 @@ export default function CountryDetails() {
         </Button>
 
         <Card className={classes["country-card"]}>
-          <Image source={country.flags.svg} altText={country.name.common} />
+          <Image
+            source={country.flags.svg || country.flag.png}
+            altText={`Flag of ${country.name.common}`}
+          />
           <Card className={classes["country-text"]}>
             <h3>{country.name.common} </h3>
             <Card className={classes["country-text-wrapper"]}>
