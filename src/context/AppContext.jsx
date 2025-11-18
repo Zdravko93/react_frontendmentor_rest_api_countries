@@ -1,4 +1,4 @@
-import React, { useState, useEffect, createContext, useContext } from "react";
+import { useState, useEffect, createContext, useContext } from "react";
 import { shuffleCountries } from "../utils/countryUtils.js";
 
 const AppContext = createContext(null);
