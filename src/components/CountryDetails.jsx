@@ -84,7 +84,7 @@ export default function CountryDetails() {
         <link
           rel="canonical"
           href={`https://zdravko93.github.io/react_frontendmentor_rest_api_countries/country-details/${encodeURIComponent(
-            countryName
+            country.cca3
           )}`}
         />
         <meta
@@ -103,7 +103,11 @@ export default function CountryDetails() {
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content={country.flags.svg || country.flags.png}
+          content={
+            country.flags.svg ||
+            country.flags.png ||
+            "https://zdravko93.github.io/react_frontendmentor_rest_api_countries/screenshot-rest-api-countries-project.png"
+          }
         />
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
