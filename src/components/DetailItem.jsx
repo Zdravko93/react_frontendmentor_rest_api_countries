@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-export default function DetailItem({
+export default React.memo(function DetailItem({
   label,
   value,
   headerLevel = "h4",
@@ -74,4 +74,4 @@ export default function DetailItem({
       {label && `${label}:`} <span>{value}</span>
     </HeaderTag>
   );
-}
+});

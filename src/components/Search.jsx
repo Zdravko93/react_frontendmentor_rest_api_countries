@@ -1,10 +1,12 @@
+import React from "react";
+
 import { FaSearch } from "react-icons/fa";
 import { useSearch } from "../customHooks/useSearch";
 import Card from "./Card";
 
 import classes from "./Search.module.css";
 
-export default function Search() {
+export default React.memo(function Search() {
   const { countryInput, handleSearchChange } = useSearch();
 
   return (
@@ -22,4 +24,4 @@ export default function Search() {
       <FaSearch className={classes["search-icon"]} />
     </Card>
   );
-}
+});

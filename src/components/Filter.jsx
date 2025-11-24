@@ -1,9 +1,11 @@
+import React from "react";
+
 import { useFilter } from "../customHooks/useFilter";
 import Card from "./Card";
 
 import classes from "./Filter.module.css";
 
-export default function Filter() {
+export default React.memo(function Filter() {
   const { selectedRegion, handleSelectChange } = useFilter();
 
   return (
@@ -26,4 +28,4 @@ export default function Filter() {
       <span className={classes["select-arrow"]}></span>
     </Card>
   );
-}
+});

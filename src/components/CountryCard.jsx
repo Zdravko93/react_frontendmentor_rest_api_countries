@@ -1,3 +1,5 @@
+import React from "react";
+
 import { Link } from "react-router-dom";
 
 import { useDelayedVisibility } from "../customHooks/useDelayedVisibility";
@@ -8,7 +10,7 @@ import DetailItem from "./DetailItem";
 
 import classes from "./CountryCard.module.css";
 
-export default function CountryCard({ countryData, index }) {
+export default React.memo(function CountryCard({ countryData, index }) {
   const isVisible = useDelayedVisibility(index);
 
   return (
@@ -46,4 +48,4 @@ export default function CountryCard({ countryData, index }) {
       </Card>
     </Link>
   );
-}
+});
